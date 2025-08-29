@@ -1,15 +1,51 @@
 package Oops;
 
     /*
-    Abstraction in Java is the process of hiding the implementation details and only showing the essential information to the user.
-    This helps simplify the system by focusing on what an object does rather than how it does it.
-    For example, when we use a List in Java, we just call add() or remove() without worrying about whether the implementation is ArrayList or LinkedList.”
+
+    “Abstraction in Java is an OOP concept where we hide the implementation details and only show the essential features. In simple terms, the user knows what
+    a method does but not how it’s done.
+
+    In Java, abstraction is mainly achieved in two ways:
+        1. Abstract classes, declared with the abstract keyword. They can have abstract methods without a body as well as concrete methods with implementation.
+        2. Interfaces, which before Java 8 could only have abstract methods, but since Java 8 they can also have default and static methods.
+
+    An abstract class can have constructors (which can be called in the child class using the Super keyword) and instance variables, while interfaces cannot. Also, a class can
+    extend only one abstract class  (using extends keyword) but implement multiple interfaces (using implements keyword), giving flexibility with multiple inheritance. 100%
+    abstraction could be achieved before Java 8, now partial too) → can have abstract, default, and static methods.
+
+    A key rule is: if a class has even one abstract method, it must be declared abstract. and if we inherit an abstract class then all the abstract methods should
+    be declared in the child class using @Overridden keyword above method name.
+
+    And while you cannot directly instantiate an abstract class, you can create references to it and point them to subclass objects — which enables polymorphism.
+    For real-world examples: In Selenium, we use ITestListener where TestNG calls our implementations behind the scenes, and in JDBC, we just call getConnection()
+    without worrying about the underlying database. Similarly, an ATM hides all the banking logic — we just see simple options like withdraw or check balance.
+    So, abstraction focuses on what an object does rather than how it does it, making systems easier to design, extend, and maintain.”
 
     Abstract Classes and Abstract Methods
-
-    * An abstract method must always be redefined in the subclass, thus making overriding compulsory or making the subclass itself abstract.
+    * An abstract method must always be redefined in the subclass, thus making @Overriding compulsory or making the subclass itself abstract.
     * There can be no object of an abstract class. That is, an abstract class can not be directly instantiated with the new operator.
-    * An abstract class can have constructors and the default constructor is always present in an abstract class.
+    * It can have constructors and that constructor can be called in the child class by using the super keyword. The reason of having constructor
+    is to initialize the variables declared in the abstract class.
+
+    Difference between abstract class and interface?
+        Inheritance: Abstract class → extends, Interface → implements.
+        Methods: Abstract class → abstract + concrete methods; Interface → only abstract before Java 8, can have default + static after Java 8.
+        Variables: Abstract class → instance variables; Interface → only public static final.
+        Constructors: Abstract class → allowed; Interface → not allowed.
+        Multiple Inheritance: One abstract class, multiple interfaces.
+        Abstraction: Abstract class → partial; Interface → full (before Java 8).
+
+     Not imp (can be ignored)
+
+    abstract class Vehicle {
+    String brand;
+    Vehicle(String brand) {
+        this.brand = brand;
+        System.out.println("Vehicle constructor called"); }}
+
+        class Car extends Vehicle {
+    Car(String brand) {
+        super(brand); // calls abstract class constructor }}
 
     * Class that is declared with an abstract keyword.
     * Method that is declared without implementation and should have abstract keyword.

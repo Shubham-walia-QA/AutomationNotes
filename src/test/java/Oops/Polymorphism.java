@@ -8,8 +8,8 @@ package Oops;
 public class Polymorphism {
 
     /*
-    Polymorphism : - Same name + Multiple forms
-                       actions + behaviour
+    Polymorphism : - same method name, but different implementations.
+    It helps in writing flexible and reusable code because you don’t need to write separate method names for similar operations.
 
     Types of Polymorphism::
     1. Compile time/ early binding/static binding/overloading. :: is the concept of Polymorphism where more than one method share the same name with different
@@ -39,7 +39,7 @@ public class Polymorphism {
         }
     }
 
-//     Maein Method
+//     Main Method
      class Maein {
         public static void main(String args[]){
             Polymorphism obj1 = new Polymorphism();

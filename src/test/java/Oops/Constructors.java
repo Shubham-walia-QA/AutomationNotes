@@ -8,6 +8,17 @@ public class Constructors {
 
     /*
 
+    Constructor = special block, auto-called on object creation.
+    Diff from method = name, return type, auto-call, purpose.
+    Types = default, parameterized, copy.
+    Cannot be abstract/static/final/synchronized.
+    Supports overloading.
+    Compiler gives default constructor if none is written.
+    Can chain with this() and super().
+    Used for initializing objects.
+
+
+    Not imp
     * Constructors must have the same name as the class within which it is defined it is not necessary for the method in Java.
     * Constructors do not return any type while method(s) have the return type or void if does not return any value.
     * Constructors are called only once at the time of Object creation while method(s) can be called any number of times.
