@@ -20,7 +20,7 @@ public class Methods {
         3. Default ->
         4. Protected ->Accessible only in that package but using inheritance can be accessed in other class.
 
-        Class can be private/public/default.
+        Class can be public/default.
         Public class :- Accessible anywhere in the project.
         Default class :- Accessible only in the package.
 
@@ -35,8 +35,8 @@ public class Methods {
 
         Variable    || Within Same Class || Outside class but in same pkg || Outside pkg without inheritance || Outside pkg with inheritance ||
         Public      ||  Y                || Y                             ||    Y                            || Y                            ||
-        Protected   ||  Y                || Y                             ||    N                            || N                            ||
-        Default     ||  Y                || Y                             ||    N                            || Y                            ||
+        Protected   ||  Y                || Y                             ||    N                            || Y                            ||
+        Default     ||  Y                || Y                             ||    N                            || N                            ||
         Private     ||  Y                || N                             ||    N                            || N                            ||
 
         *** Keyword ***

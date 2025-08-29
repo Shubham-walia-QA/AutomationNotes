@@ -1,18 +1,20 @@
 package Oops;
 
     /*
-    Abstraction in Java is the process of hiding the implementation details and only showing the essential functionality or features to the user.
+    Abstraction in Java is the process of hiding the implementation details and only showing the essential information to the user.
     This helps simplify the system by focusing on what an object does rather than how it does it.
-    The unnecessary details or complexities are not displayed to the user.
+    For example, when we use a List in Java, we just call add() or remove() without worrying about whether the implementation is ArrayList or LinkedList.”
 
     Abstract Classes and Abstract Methods
-    * An abstract class is a class that is declared with an abstract keyword.
-    * An abstract method is a method that is declared without implementation and should have abstract keyword.
-    * An abstract class may or may not have all abstract methods. Some of them can be concrete methods
-    * A abstract method must always be redefined in the subclass, thus making overriding compulsory or making the subclass itself abstract.
-    * Any class that contains one or more abstract methods must also be declared with an abstract keyword.
+
+    * An abstract method must always be redefined in the subclass, thus making overriding compulsory or making the subclass itself abstract.
     * There can be no object of an abstract class. That is, an abstract class can not be directly instantiated with the new operator.
-    * An abstract class can have parameterized constructors and the default constructor is always present in an abstract class.
+    * An abstract class can have constructors and the default constructor is always present in an abstract class.
+
+    * Class that is declared with an abstract keyword.
+    * Method that is declared without implementation and should have abstract keyword.
+    * An abstract class may or may not have all abstract methods. Some of them can be concrete methods
+    * If a class contains one or more abstract methods than that must be declared with an abstract keyword.
      */
 
     // Java program to illustrate the

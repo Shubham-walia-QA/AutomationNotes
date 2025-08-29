@@ -11,6 +11,20 @@ public class StringNotes {
         4. Concatenating string with integer. Example 3
 
         Note :- Irrespective of how many object we create java will store same value in a single memory.
+
+        String operations::
+
+        String s = "I am the best"
+        String p = "123"
+
+        s.length()      || length of string
+        s.split(" ")    || Split the string                         || String[] abc = s.split(" ");
+        s.trim()        || Remove empty space from Start and end    || String trimmedS12 = s12.trim();
+        s.charAt(1)     || Start from 0 index, print char in String || String abc = s.charAt(1)
+        s.toLowerCase(Locale.ROOT); ||                              || String p =  s.toLowerCase(Locale.ROOT);
+        s.equals(p);    || Compare 2 string and return boolean value|| boolean b = s.equals(p);
+        s.concat(p);    || Will Add string "s" to string "p"        || String l = s.concat(p);
+
         Example 4
          */
 

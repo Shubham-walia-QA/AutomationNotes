@@ -6,8 +6,8 @@ package Oops;
 public class Encapsulation {
 
     /**
-    Encapsulation :- Like a capsule we keep everything tight inside a small thing so that no one from outside world can see it. Encapsulation is Data wraping/binding
-     data and methods in single unit.
+    Encapsulation :- Like a capsule we keep everything tight inside a small thing so that no one from outside world can see it. Encapsulation is
+     about binding data and methods together into a single unit (class) and controlling access to that data using access modifiers (private, public, etc.
 
     Data hiding :- Hiding data from outside world so that they cannot be used.
 

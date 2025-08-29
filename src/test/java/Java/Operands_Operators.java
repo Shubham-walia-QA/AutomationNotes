@@ -12,9 +12,9 @@ public class Operands_Operators {
  * : Multiplication         ||  ++ : Increments by 1            ||  == Equal to                 ||      && -> And -> True if both true  ||  += , Add  and assign.
  / : Division               ||  -- : Decrements by 1            ||  != Not Equal to             ||      || -> Or ->True if one is true  ||  -= , Subtract  and assign.
  % : Remainder              ||  !  : Inverts a boolean value    ||  > Greater than              ||      ?! -> Ternary Operator          ||  *= , Multiply and assign.
- + : Addition               ||                                  ||  < Less than                 ||                                      ||  /= , Divide  and assign.
+ + : Addition               ||+= int : increment value by int   ||  < Less than                 ||                                      ||  /= , Divide  and assign.
  – : Subtraction            ||                                  ||  >= Greater than or equal to ||                                      ||  %= , Remainder and assign.
-                                                                    <= Less than or equal to    ||                                      ||   example, a += 5 replaces a = a + 5.
+                                                                ||  <= Less than or equal to    ||                                      ||   example, a += 5 replaces a = a + 5.
 
 
          */

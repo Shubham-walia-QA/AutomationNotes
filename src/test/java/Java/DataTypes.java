@@ -5,20 +5,20 @@ public class DataTypes {
     public static void main(String[] args) {
 
         // Primitive data types
-        // - Numeric Types -
+            // - Numeric Types -
         int a = 1234567890; //Integer can have max 10 values
         long l = 1234567890123456789L; // Long should end with L and can have max 19 values
 
-        // - Floating Point -
+            // - Floating Point -
         double d = 1.43256; // Should have decimal values.
         float floatz = 1.432f; //  Float should end with f and it should have decimal values
 
-        // - Non Numeric -
+            // - Non Numeric -
         boolean b = false; // Boolean can only have true and false value
         char c = 'a' ; //char should start and end with ' and can have single digit value
 
 
-        // Non-Primitive data types - They are user defined data types
+            // Non-Primitive data types - They are user defined data types
         String s = "This is good"; // String is a class in java
         int [] arr = {1,2};
         // Testi t = new test();
@@ -38,15 +38,21 @@ public class DataTypes {
         double x = 10.5;
         int y = (int)x; // Explicitly cast double to int
 
+        /*
+        || Long to int            || int i = (int) 10.5;
+        || float to double        || double i = (double) 123.456f;
+        || Double to int          || int i = (int) 123.456;
+        || float to int           || int i = (int) 23.6f;
+        */
+
+        // String to int
+        int i = Integer.parseInt("2313123");
+
         // To convert float or double to string. Below .2 indicate 2 digit should appear after decimal.
         String.format("$%.2f",floatz);
 
 
-        // Initialization :: When we are assigning any value to our data types then we are doing initialization.
-        int abc = 10;
 
-        // Declaration :: When we are creating any value without any value then we are doing declaration.
-        int xyz;
 
         // Type promotion :: When on performing action on 2 same data types the result is another data type then java
         // automatically changes the data type to accommodate the larger value this is called promotion.

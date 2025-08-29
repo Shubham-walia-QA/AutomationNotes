@@ -1,9 +1,11 @@
 package greeksForGreeks;
 
+import java.util.Scanner;
+
 public class AddTwoNumbers {
 
     public static void main(String[] args) {
-        Scanner sc = new Scanner(String);
+        Scanner sc = new Scanner(System.in);
         sc.next();
         System.out.println();
     }

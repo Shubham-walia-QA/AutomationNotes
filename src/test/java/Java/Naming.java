@@ -4,8 +4,8 @@ public class Naming {
 
     public static void main(String[] args) {
         /*
-        Project ::
-        Package ::
+        Project :: small letter
+        Package :: capital
         Class :: Capital + Noun (Dog, Account)
         Interface :: Capital + Adjective (Runnable, ActionList, Sizeable )
         Method :: Small + Verb (getResult, DoCalculation)
